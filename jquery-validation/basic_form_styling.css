@@ -1,0 +1,82 @@
+/*basic form element styles. feel free to change. By: Dr. Raz Ben-Ezzer*/
+
+form{
+	position:relative;
+}
+
+
+form label{ /*regular labels that come BEFORE an input*/
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding:5px;
+	font-size: 18px;
+	margin:5px;
+
+}
+
+form input+label { /*labels that come AFTER an input*/
+	text-align: left;
+	font-size: 18px;
+	
+	padding:10px;
+}
+
+form input+label.error ,form textarea+label.error{ /*error messages AFTER an input , such as email*/
+	color: #FF0004;
+	padding: 10px;
+	font-size: 18px;
+	width: auto !important;
+	
+
+}
+
+form .radioreq, form .selectreq{/*error message AFTER an radio group*/
+	color: #FF0004 !important;
+
+}
+
+
+
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="file"],
+form select,
+form textarea { /*regular inputs, default look*/
+	background-color: #EEE;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 8px;
+	
+}
+
+form input[type="text"].error,
+form input[type="number"].error,
+form input[type="file"].error,
+form input[type="email"].error,
+form textarea.error { /*input fields that contain an error*/
+	background-color: #FAA;
+	font-size: 18px;
+}
+
+form input[type="text"].valid,
+form input[type="number"].valid,
+form input[type="file"].valid,
+form input[type="email"].valid,
+form textarea.valid { /*input fields that passed validation*/
+	background-color: #AFA;
+	font-size: 18px;
+}
+
+
+
+form input[type="submit"]{
+	
+	font-size:18px;
+	box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+	padding:10px;
+	border-radius: 8px;
+}
+
