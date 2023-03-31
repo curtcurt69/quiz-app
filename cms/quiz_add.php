@@ -35,7 +35,7 @@ header ("Location: quiz_read.php");
 
 
 <!doctype html>
-<html>
+<html lang="en-us">
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
@@ -56,21 +56,21 @@ header ("Location: quiz_read.php");
 	<main>
 
 		<form action="" method="post" id="add_question_form">
-			<table width="100%" border="0" cellspacing="10">
+			<table style="width:100%;border:0;border-spacing:10px;">
 				<tr>
-					<td colspan="2" align="center">
+					<td colspan="2" style="text-align: center">
 						<h2>Add Question</h2>
 					</td>
 				</tr>
 				<tr>
-					<td width="25%" height="150" align="right" valign="top">Statement</td>
-					<td valign="top"><input type="text" name="question_statement" id="question_statement" required size="50" maxlength="150">
+					<td style="width:25%;text-align:right;vertical-align:top" height="150">Statement</td>
+					<td style="vertical-align: top"><input type="text" name="question_statement" id="question_statement" required size="50" maxlength="150">
 					</td>
 				</tr>
 
 				<tr>
-					<td width="25%" height="150" align="right" valign="top">Correct answer</td>
-					<td valign="top">
+					<td style="width:25%;text-align:right;vertical-align:top;" height="150">Correct answer</td>
+					<td style="vertical-align: top">
 						<label>true </label>
 						<input type="radio" id="question_answer" name="question_answer" value="1"/>
 					<br>
@@ -85,8 +85,8 @@ header ("Location: quiz_read.php");
 				</tr>
 
 					<tr>
-					<td width="25%" height="150" align="right" valign="top">Points</td>
-					<td valign="top">
+					<td style="width:25%;text-align:right;vertical-align:top;" height="150">Points</td>
+					<td style="vertical-align: top">
 						<select name="question_points" id="question_points" required>
 							<option selected disabled>assign points</option>
 							<?php
@@ -102,7 +102,7 @@ header ("Location: quiz_read.php");
 
 
 				<tr>
-					<td align="right" valign="middle">&nbsp;</td>
+					<td style="text-align: right;vertical-align: middle;">&nbsp;</td>
 					<td><input type="submit" name="submit" id="submit" value="Submit">
 					</td>
 				</tr>

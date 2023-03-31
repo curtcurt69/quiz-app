@@ -16,7 +16,7 @@ $overAllPoints = 0;
 $num=0;
 ?>
 <!doctype html>
-<html>
+<html lang="en-us">
 <head>
 	<meta charset="UTF-8">
 	<title>Questions- Read</title>
@@ -40,16 +40,16 @@ $num=0;
 	
 		<main>
 			<p>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_points"><button>Order By Points Low to High</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_points DESC"><button>Order By Points High To Low</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_statement"><button>Order By Statement A-Z</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_statement DESC"><button>Order By Statement Z-A</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_answer"><button>Order By Answer, false's first</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_answer DESC"><button>Order By Answer, true's first</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_id"><button>Order By Id, low to high</button></a>
-				<a name="myOrder" href="quiz_read.php?myOrder=question_id DESC"><button>Order By Id, high to low</button></a>
+				<a href="quiz_read.php?myOrder=question_points"><button>Order By Points Low to High</button></a>
+				<a href="quiz_read.php?myOrder=question_points DESC"><button>Order By Points High To Low</button></a>
+				<a href="quiz_read.php?myOrder=question_statement"><button>Order By Statement A-Z</button></a>
+				<a href="quiz_read.php?myOrder=question_statement DESC"><button>Order By Statement Z-A</button></a>
+				<a href="quiz_read.php?myOrder=question_answer"><button>Order By Answer, false's first</button></a>
+				<a href="quiz_read.php?myOrder=question_answer DESC"><button>Order By Answer, true's first</button></a>
+				<a href="quiz_read.php?myOrder=question_id"><button>Order By Id, low to high</button></a>
+				<a href="quiz_read.php?myOrder=question_id DESC"><button>Order By Id, high to low</button></a>
 			</p>
-		  <table width="100%" border="0">
+		  <table style="width:100%;border:0;">
 				<tr>
 					<th>#</th>
 					<th>ID</th>
@@ -97,7 +97,7 @@ $num=0;
 				?>
 
 				<tr class="tableTotals">
-					<td colspan="4" align="right">
+					<td colspan="4" style="text-align: right;">
 						<p style="text-align: right">The total number of points in the quiz is:</p>
 						<p style="text-align: right"> Each point in the quiz is worth:</p>
 

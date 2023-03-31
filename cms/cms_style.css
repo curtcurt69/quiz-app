@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -11,7 +11,7 @@
 	clear: both;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Exo', sans-serif;
 	font-weight: 400;
 	font-size: 100%;
 	min-height: 100vh;

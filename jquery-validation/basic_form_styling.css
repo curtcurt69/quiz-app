@@ -23,17 +23,17 @@ form input+label { /*labels that come AFTER an input*/
 }
 
 form input+label.error ,form textarea+label.error{ /*error messages AFTER an input , such as email*/
-	color: #FF0004;
+	color: #551A8B;
 	padding: 10px;
-	font-size: 18px;
+	font-size: 14px;
 	width: auto !important;
 	
 
 }
 
 form .radioreq, form .selectreq{/*error message AFTER an radio group*/
-	color: #FF0004 !important;
-
+	color: #551A8B !important;
+	font-size: 14px;
 }
 
 
@@ -57,8 +57,8 @@ form input[type="number"].error,
 form input[type="file"].error,
 form input[type="email"].error,
 form textarea.error { /*input fields that contain an error*/
-	background-color: #FAA;
-	font-size: 18px;
+	background-color:  #CBC3e3;
+	font-size: 14px;
 }
 
 form input[type="text"].valid,
@@ -75,7 +75,7 @@ form textarea.valid { /*input fields that passed validation*/
 form input[type="submit"]{
 	
 	font-size:18px;
-	box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0 3px 10px 0 rgba(50, 50, 50, 0.75);
 	padding:10px;
 	border-radius: 8px;
 }
