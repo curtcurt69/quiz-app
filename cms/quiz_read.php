@@ -21,28 +21,28 @@ function mark_selected($opt) {
 
 switch ($orderby) {
     case "1":
-        $dataOrder = 'question_points';
-        break;
-    case "2":
-        $dataOrder = 'question_points DESC';
-        break;
-    case "3":
-        $dataOrder = 'question_statement';
-        break;
-    case "4":
-        $dataOrder = 'question_statement DESC';
-        break;
-    case "5":
-        $dataOrder = 'question_answer';
-        break;
-    case "6":
-        $dataOrder = 'question_answer DESC';
-        break;
-    case "7":
         $dataOrder = 'question_id';
         break;
-    case "8":
+    case "2":
         $dataOrder = 'question_id DESC';
+        break;
+    case "3":
+        $dataOrder = 'question_points';
+        break;
+    case "4":
+        $dataOrder = 'question_points DESC';
+        break;
+    case "5":
+        $dataOrder = 'question_statement';
+        break;
+    case "6":
+        $dataOrder = 'question_statement DESC';
+        break;
+    case "7":
+        $dataOrder = 'question_answer';
+        break;
+    case "8":
+        $dataOrder = 'question_answer DESC';
         break;
     default:
         $dataOrder="question_id";
@@ -95,14 +95,14 @@ $num=0;
 			</p>-->
 
             <select  class="selectobj" onChange="selectMenu(this)">
-                <option <?php mark_selected('1'); ?> value="quiz_read.php?orderby=1" >Order By Points Low to High</option>
-                <option <?php mark_selected('2'); ?>  value="quiz_read.php?orderby=2">Order By Points High To Low</option>
-                <option <?php mark_selected('3'); ?>  value="quiz_read.php?orderby=3">Order By Statement A-Z</option>
-                <option <?php mark_selected('4'); ?>  value="quiz_read.php?orderby=4">Order By Statement Z-A</option>
-                <option <?php mark_selected('5'); ?>  value="quiz_read.php?orderby=5">Order By Answer, false's first</option>
-                <option <?php mark_selected('6'); ?>  value="quiz_read.php?orderby=6">Order By Answer, true's first</option>
-                <option <?php mark_selected('7'); ?>  value="quiz_read.php?orderby=7">Order By Id, low to high</option>
-                <option <?php mark_selected('8'); ?>  value="quiz_read.php?orderby=8">Order By Id, high to low</option>
+                <option <?php mark_selected('1'); ?> value="quiz_read.php?orderby=1" >Question id Low to high</option>
+                <option <?php mark_selected('2'); ?>  value="quiz_read.php?orderby=2">Question id High to low</option>
+                <option <?php mark_selected('3'); ?>  value="quiz_read.php?orderby=3">Points Low to high</option>
+                <option <?php mark_selected('4'); ?>  value="quiz_read.php?orderby=4">Points High To low</option>
+                <option <?php mark_selected('5'); ?>  value="quiz_read.php?orderby=5">Statement A-Z</option>
+                <option <?php mark_selected('6'); ?>  value="quiz_read.php?orderby=6">Statement Z-A</option>
+                <option <?php mark_selected('7'); ?>  value="quiz_read.php?orderby=7">Answers, False first</option>
+                <option <?php mark_selected('8'); ?>  value="quiz_read.php?orderby=8">Answers, True first</option>
             </select>
 		  <table style="width:100%;border:0;">
 				<tr>
