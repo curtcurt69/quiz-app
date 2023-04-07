@@ -97,7 +97,7 @@ option {
 	background-color: lightyellow;
 	font-size: 20px;
 	border-radius: 20px;
-
+	opacity: 0.3;
 }
 /*.selectobj:focus {
 	color: black;
