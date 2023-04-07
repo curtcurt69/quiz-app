@@ -87,7 +87,9 @@ button{
 	color: #fafab6;
 	background-color: darkred;
 	font-size: 20px;
-	border-radius: 15px;
+	border-radius: 20px;
+	padding: 5px;
+	text-align: center;
 }
 
 option {
