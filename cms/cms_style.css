@@ -84,15 +84,22 @@ button{
 }
 
 .selectobj {
-	color: lightyellow;
+	color: #fafab6;
 	background-color: darkred;
 	font-size: 20px;
 	border-radius: 15px;
 }
 
-.selectobj:focus {
+option {
+	color: black;
+	background-color: lightyellow;
+	font-size: 20px;
+	border-radius: 20px;
+
+}
+/*.selectobj:focus {
 	color: black;
 	background-color: lightyellow;
 	font-size: 20px;
 	border-radius: 15px;
-}
+}*/
