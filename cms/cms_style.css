@@ -82,3 +82,17 @@ tr.tableTotals td{
 button{
 	padding:8px;
 }
+
+.selectobj {
+	color: lightyellow;
+	background-color: darkred;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+.selectobj:focus {
+	color: black;
+	background-color: lightyellow;
+	font-size: 20px;
+	border-radius: 15px;
+}

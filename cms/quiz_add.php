@@ -64,7 +64,7 @@ header ("Location: quiz_read.php");
 				</tr>
 				<tr>
 					<td style="width:25%;text-align:right;vertical-align:top" height="150">Statement</td>
-					<td style="vertical-align: top"><input type="text" name="question_statement" id="question_statement" required size="50" maxlength="150">
+					<td style="vertical-align: top"><input type="text" name="question_statement" id="question_statement" class="responsiveInput" required size="50" maxlength="150">
 					</td>
 				</tr>
 

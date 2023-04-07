@@ -76,7 +76,7 @@ $replace_str = '"';
 $question_statement = str_replace($replace_str, '&quot;', $question_statement);
 					?>
 					<td width="40%" height="150" align="right" valign="top">Statement</td>
-<td valign="top"><input type="text" name="question_statement" id="question_statement" required size="100" maxlength="200" value="<?php echo $question_statement ?>">
+<td valign="top"><input type="text" name="question_statement" id="question_statement" class="responsiveInput" required size="100" maxlength="200" value="<?php echo $question_statement ?>">
 					</td>
 				</tr>
 
@@ -114,7 +114,7 @@ $question_statement = str_replace($replace_str, '&quot;', $question_statement);
 						<select name="question_points" id="question_points" required>
 							<option selected disabled>assign points</option>
 							<?php
-								for ($i=1;$i<100;$i++){
+								for ($i=100;$i>4;$i-=5){
 									if ($row["question_points"]==$i){
 										$markSelect="selected";
 									}else{
@@ -123,7 +123,7 @@ $question_statement = str_replace($replace_str, '&quot;', $question_statement);
 									
 									
 									
-								echo "<option $markSelect value=\"$i\">$i</option>";
+								echo "<option $markSelect value=\"$i\">Question is worth $i points</option>";
 								}
 							?>
 						</select>

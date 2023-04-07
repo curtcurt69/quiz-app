@@ -1,16 +1,56 @@
 <?php
-require( "../config.php" );
 
-if (isset($_GET['myOrder'])) {
-	$myOrder = $_GET['myOrder'];
-	$sql_get_all = "SELECT * FROM questions_tbl ORDER BY $myOrder";
+
+if (isset($_GET['orderby']) && $_GET['orderby'] !== "") {
+	$orderby = $_GET['orderby'];
 } else {
-	$sql_get_all = 'SELECT * FROM questions_tbl';
+	$orderby = 1;
 }
 
+function mark_selected($opt) {
+    if (isset($_GET['orderby']) && $_GET['orderby'] !== "") {
+        $orderby = $_GET['orderby'];
+    } else {
+        $orderby = 1;
+    }
 
+    if ($orderby==$opt) {
+        echo 'selected="selected"';
+    }
+}
 
+switch ($orderby) {
+    case "1":
+        $dataOrder = 'question_points';
+        break;
+    case "2":
+        $dataOrder = 'question_points DESC';
+        break;
+    case "3":
+        $dataOrder = 'question_statement';
+        break;
+    case "4":
+        $dataOrder = 'question_statement DESC';
+        break;
+    case "5":
+        $dataOrder = 'question_answer';
+        break;
+    case "6":
+        $dataOrder = 'question_answer DESC';
+        break;
+    case "7":
+        $dataOrder = 'question_id';
+        break;
+    case "8":
+        $dataOrder = 'question_id DESC';
+        break;
+    default:
+        $dataOrder="question_id";
 
+}
+
+require( "../config.php" );
+$sql_get_all = "SELECT * FROM questions_tbl ORDER BY $dataOrder";
 $result = $makeconnection->query( $sql_get_all );
 $overAllPoints = 0;
 $num=0;
@@ -27,6 +67,10 @@ $num=0;
 				window.location.href = 'quiz_delete.php?id=' + question_id;
 			}
 		}
+
+        function selectMenu(selectionObj) {
+            window.location.href = selectionObj.options[selectionObj.selectedIndex].value;
+        }
 	</script>
 </head>
 
@@ -39,7 +83,7 @@ $num=0;
 	  </header>
 	
 		<main>
-			<p>
+			<!--<p>
 				<a href="quiz_read.php?myOrder=question_points"><button>Order By Points Low to High</button></a>
 				<a href="quiz_read.php?myOrder=question_points DESC"><button>Order By Points High To Low</button></a>
 				<a href="quiz_read.php?myOrder=question_statement"><button>Order By Statement A-Z</button></a>
@@ -47,8 +91,19 @@ $num=0;
 				<a href="quiz_read.php?myOrder=question_answer"><button>Order By Answer, false's first</button></a>
 				<a href="quiz_read.php?myOrder=question_answer DESC"><button>Order By Answer, true's first</button></a>
 				<a href="quiz_read.php?myOrder=question_id"><button>Order By Id, low to high</button></a>
-				<a href="quiz_read.php?myOrder=question_id DESC"><button>Order By Id, high to low</button></a>
-			</p>
+				<a href="quiz_read.php?myOrder=question_id DESC"><button>Order By Id, low to high</button></a>
+			</p>-->
+
+            <select  class="selectobj" onChange="selectMenu(this)">
+                <option <?php mark_selected('1'); ?> value="quiz_read.php?orderby=1" >Order By Points Low to High</option>
+                <option <?php mark_selected('2'); ?>  value="quiz_read.php?orderby=2">Order By Points High To Low</option>
+                <option <?php mark_selected('3'); ?>  value="quiz_read.php?orderby=3">Order By Statement A-Z</option>
+                <option <?php mark_selected('4'); ?>  value="quiz_read.php?orderby=4">Order By Statement Z-A</option>
+                <option <?php mark_selected('5'); ?>  value="quiz_read.php?orderby=5">Order By Answer, false's first</option>
+                <option <?php mark_selected('6'); ?>  value="quiz_read.php?orderby=6">Order By Answer, true's first</option>
+                <option <?php mark_selected('7'); ?>  value="quiz_read.php?orderby=7">Order By Id, low to high</option>
+                <option <?php mark_selected('8'); ?>  value="quiz_read.php?orderby=8">Order By Id, high to low</option>
+            </select>
 		  <table style="width:100%;border:0;">
 				<tr>
 					<th>#</th>

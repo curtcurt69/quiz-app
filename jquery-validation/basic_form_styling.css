@@ -37,7 +37,9 @@ form .radioreq, form .selectreq{/*error message AFTER an radio group*/
 }
 
 
-
+.responsiveInput {
+	width: 100%;
+}
 
 form input[type="text"],
 form input[type="number"],
