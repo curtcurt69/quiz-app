@@ -99,8 +99,8 @@ $num=0;
                 <option <?php mark_selected('2'); ?>  value="quiz_read.php?orderby=2">Question id High to low</option>
                 <option <?php mark_selected('3'); ?>  value="quiz_read.php?orderby=3">Points Low to high</option>
                 <option <?php mark_selected('4'); ?>  value="quiz_read.php?orderby=4">Points High To low</option>
-                <option <?php mark_selected('5'); ?>  value="quiz_read.php?orderby=5">Statement A-Z</option>
-                <option <?php mark_selected('6'); ?>  value="quiz_read.php?orderby=6">Statement Z-A</option>
+                <option <?php mark_selected('5'); ?>  value="quiz_read.php?orderby=5">Statement A to Z</option>
+                <option <?php mark_selected('6'); ?>  value="quiz_read.php?orderby=6">Statement Z to A</option>
                 <option <?php mark_selected('7'); ?>  value="quiz_read.php?orderby=7">Answers, False first</option>
                 <option <?php mark_selected('8'); ?>  value="quiz_read.php?orderby=8">Answers, True first</option>
             </select>

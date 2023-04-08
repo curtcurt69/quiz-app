@@ -88,8 +88,8 @@ button{
 	background-color: darkred;
 	font-size: 20px;
 	border-radius: 20px;
-	padding: 5px;
-	text-align: right;
+	padding: 8px;
+	width: 21%;
 }
 
 option {
@@ -98,7 +98,7 @@ option {
 	font-size: 20px;
 	border-radius: 20px;
 	opacity: 0.3;
-	text-align: center;
+
 }
 /*.selectobj:focus {
 	color: black;
