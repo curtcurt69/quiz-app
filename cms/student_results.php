@@ -76,7 +76,7 @@ $student_count = $result->num_rows;
 				
 				<td>
 					<?php echo $row['student_percent'].'%'; 
-				$sum_student_results+=$row['student_points'];
+				$sum_student_results+=$row['student_percent'];
 					
 					?>
 				</td>
