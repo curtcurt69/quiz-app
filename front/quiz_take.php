@@ -6,7 +6,7 @@ $result = $makeconnection->query( $sql_get_all );
 $overAllPoints = 0; ///the sum of all the points in the quiz
 $num = 0; //question number
 
-if (isset($_GET['message'])) {
+if (isset($_GET['message']) && $_GET['message'] != "") {
     $message = $_GET[ 'message' ]; //if there is a var called messgae on URL- find it.
 } else {
     $message = "";

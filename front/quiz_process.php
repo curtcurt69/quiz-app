@@ -83,12 +83,26 @@ if ( $count > 0 ) {
     echo "<h2>Total points earned: $points_earned out of $max_avail_points</h2>";
     $student_percent = number_format( $points_earned / $max_avail_points * 100, 1 );
     echo "<h2>Percent earned: $student_percent%</h2>";
-
-
+	
+	
+	if ($student_percent >= 90) {
+		$student_lettergrade="A";
+	} elseif ($student_percent >= 80 && $student_percent <= 89) {
+		$student_lettergrade="B";
+	} elseif ($student_percent >= 70 && $student_percent <= 79) {
+		$student_lettergrade="C";
+	} elseif ($student_percent >= 60 && $student_percent <= 69) {
+		$student_lettergrade="D";
+	} elseif ($student_percent < 59) {
+		$student_lettergrade="F";
+	}
+	
+	echo "<h2>Lettergrade: $student_lettergrade</h2>";
+	
     $sql_insert_result = "INSERT INTO students_tbl
- (student_first, student_last, student_email, student_points, student_outof, student_percent, student_datetime)
+ (student_first, student_last, student_email, student_points, student_outof, student_percent, student_lettergrade, student_datetime)
   VALUES
-  ('$student_first', '$student_last', '$student_email', $points_earned, $max_avail_points, $student_percent, '$student_datetime')";
+  ('$student_first', '$student_last', '$student_email', '$points_earned', '$max_avail_points', '$student_percent', '$student_lettergrade', '$student_datetime')";
 
     if ( $result = $makeconnection->query( $sql_insert_result ) ) {
       echo "success";
