@@ -1,2 +1,2 @@
-# quiz-app
-CMS app for creating quizzes built with HTML, JavaScript, PHP, and SQL. This is for my Web Development 4 class at Broward College. Check out the app at http://devcurt.com/quizapp/index.php .
+# PHP Quiz CMS CRUD App
+CMS app for creating, taking, and viewing quizzes and quiz results. There is a student and a teacher portal, the student portal allows you to take the quiz while the teacher portal can view, add, modify, and delete quiz questions and also view the results of students who took the quiz. This app is built with HTML, JavaScript, PHP, and SQL. This is for my Web Development 4 class at Broward College. Check out the app at http://devcurt.com/quizapp/index.php .
