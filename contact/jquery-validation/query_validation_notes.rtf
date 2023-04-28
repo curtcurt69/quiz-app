@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+
+\i\b LINKING
+\i0\b0 \
+\
+in the <head> tag, assuming the folder 
+\b jquery-validation 
+\b0 is at the same level as the page, typical lines are:\
+\
+\
+<script type="text/javascript" src="jquery-validation/lib/jquery.js"></script>\
+<script type="text/javascript" src="jquery-validation/dist/jquery.validate.js"></script>\
+<link href="jquery-validation/basic_form_styling.css" rel="stylesheet" type="text/css">\
+\
+\
+
+\i\b CODE EXAMPLE
+\i0\b0 \
+\
+\
+<!-- ///////////////a form that has most common input types////////////////////-->\
+<form id="form_contact" name="form1" method="get" action="">\
+  <p>\
+    <label for="user_first">First name*:</label>\
+    <input name="user_first" type="text" required id="user_first" autocomplete="on">\
+  </p>\
+  <p>\
+    <label for="user_email">Text Field:</label>\
+    <input name="user_email" type="email" required id="user_email">\
+  </p>\
+  <p>\
+    <label for="user_password">Password:</label>\
+    <input name="user_password" type="password" required id="user_password" minlength="2" maxlength="12">\
+  </p>\
+  <p>\
+    <label for="confirm">Confirm:</label>\
+    <input name="confirm" type="password" required id="confirm" equalTo="#user_password">\
+  </p>\
+  <p>\
+    <label for="gender">Gender</label>\
+    <input name="gender" type="radio" id="gender_0" value="1" >\
+    <label> Male</label>\
+    <input name="gender" type="radio" id="gender_1" value="2" >\
+    <label> Female</label>\
+  <p>\
+    <label for="over18"> Are you over 18?</label>\
+    <input name="over18" type="checkbox" required id="over18" value="yes">\
+  </p>\
+  <p>\
+    <label for="quantity">Quantity desired</label>\
+    <select name="quantity" size="1" id="quantity">\
+      <option value="1">one</option>\
+      <option value="2">two</option>\
+    </select>\
+  </p>\
+  <p>\
+    <label for"comments">Comments</label>\
+    <textarea name="comments" cols="50" rows="5" id="comments" required ></textarea>\
+  </p>\
+  <p>\
+    <label for "numange">choose anumber between 3 and 7</label>\
+    <input type="text" name"numrange" id="numrange" required min="3" max="7" size="1">\
+  </p>\
+  <p>\
+    <input name="submit" type="submit" id="submit" value="Submit">\
+  </p>\
+  <script>\
+$("#form_contact").validate();\
+</script>\
+</form>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 <!-- ////////////////end form///////////////////-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+
+\i\b common methods for form validation:
+\i0\b0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 $("#form_contact").validate();\
+\
+
+\i (this assumes the id attribute of the form is "form_contact")\
+\
+\
+\
+
+\b Common input attributes:
+\b0 \
+
+\i0 \
+required
+\i \
+
+\i0 \
+minlength=" "\
+\
+maxlength=" "\
+\
+min=""\
+\
+max=""\
+\
+\
+equalTo="#
+\i id_of_other_input
+\i0 "\
+\
+\
+}

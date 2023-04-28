@@ -1,0 +1,75 @@
+/*basic form element styles. feel free to change. By: Dr. Raz Ben-Ezzer*/
+
+form label{ /*regular labels that come BEFORE an input*/
+	display: inline-block;
+	/*width: 150px;*/
+	text-align: right;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+form input+label,
+form textarea+label { /*labels that come AFTER an input, like an individual radio button or a checkbox*/
+	text-align: left;
+	width: auto;
+	vertical-align:text-top;
+	
+}
+
+
+
+form input+label.error ,
+form textarea+label.error{ /*error messages AFTER an input or a textarea*/
+	color: #FF0004;
+	text-align: left;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+form select+label.error{
+	display:none !important;
+}
+
+form select.error{
+	background-color:#FD7D80;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea { /*regular inputs, default look*/
+	background-color: #EEE;
+	
+}
+
+form input[type="text"].error,
+form input[type="email"].error,
+form input[type="password"].error,
+form textarea.error { /*input fields that contain an error*/
+	background-color: #FAA;
+}
+
+form input[type="text"].valid ,
+form input[type="email"].valid ,
+form input[type="password"].valid,
+form textarea.valid { /*input fields that passed validation*/
+	background-color: #AFA;
+}
+
+form label+textarea{/*textareas that come after a label*/
+	vertical-align:text-top;
+}
+
+form p{
+	margin:0;
+	display:block;
+	min-height:40px;
+}
+
+form input[type="submit"]{
+	margin-left:10px;
+	margin-top:15px;
+	
+}

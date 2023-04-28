@@ -1,0 +1,63 @@
+[30-Mar-2023 23:42:34 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:42:34 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 9
+[30-Mar-2023 23:42:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 60
+[30-Mar-2023 23:44:10 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:44:10 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 9
+[30-Mar-2023 23:44:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 60
+[30-Mar-2023 23:44:12 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:44:12 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 9
+[30-Mar-2023 23:44:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 60
+[30-Mar-2023 23:45:38 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:45:38 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 9
+[30-Mar-2023 23:45:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 60
+[30-Mar-2023 23:47:46 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:47:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 62
+[30-Mar-2023 23:47:47 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:47:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 62
+[30-Mar-2023 23:49:43 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:49:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 62
+[30-Mar-2023 23:49:45 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:49:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 62
+[30-Mar-2023 23:50:31 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:50:31 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 9
+[30-Mar-2023 23:50:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 60
+[30-Mar-2023 23:54:03 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:54:03 UTC] PHP Notice:  Undefined variable: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 11
+[30-Mar-2023 23:54:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 62
+[30-Mar-2023 23:54:46 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 3
+[30-Mar-2023 23:55:44 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 4
+[30-Mar-2023 23:57:03 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 4
+[30-Mar-2023 23:57:29 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 4
+[30-Mar-2023 23:59:54 UTC] PHP Notice:  Undefined index: myOrder in /home/c4d5s3h9x5gk/public_html/quizapp/cms/quiz_read.php on line 4
+[20-Apr-2023 23:51:48 UTC] PHP Warning:  Division by zero in /home/c4d5s3h9x5gk/public_html/quizapp/cms/student_results.php on line 220
+[21-Apr-2023 00:04:15 UTC] PHP Warning:  Division by zero in /home/c4d5s3h9x5gk/public_html/quizapp/cms/student_results.php on line 220
